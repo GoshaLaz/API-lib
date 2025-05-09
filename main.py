@@ -71,4 +71,4 @@ def task_detail(task_id):
     return jsonify(response.json()), response.status_code # Повертаємо HTTP GET-запит, HTTP PUT-запит або HTTP DELETE-запит
 
 if __name__ == "__main__":
-    app.run(debug=True) # Запускаємо бібліотеку
+    app.run(debug=True, port=5001) # Запускаємо бібліотеку
